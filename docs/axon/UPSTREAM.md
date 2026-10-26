@@ -13,6 +13,8 @@ resto de `CLAUDE.md` cuando choquen.
 Este documento es público: aquí no van clientes, precios, cuentas ni decisiones
 internas.
 
+Para arrancarlo en local en Windows: [`LOCAL.md`](LOCAL.md).
+
 ## Remotos
 
 | Remoto | Apunta a | Para qué |
