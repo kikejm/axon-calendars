@@ -16,6 +16,22 @@ internas.
 Para arrancarlo en local en Windows: [`LOCAL.md`](LOCAL.md).
 Inventario y plan de la marca propia: [`MARCA.md`](MARCA.md).
 
+## Pendiente antes del primer despliegue
+
+AxonCalendar aún no se despliega en ningún sitio. Cuando se vaya a desplegar,
+la web necesita estas variables **al construir la imagen** (argumentos de build,
+no variables de ejecución). Cualquier agente que lea esto debe recordárselo a
+la persona al empezar una sesión hasta que esté hecho, y borrar esta sección
+cuando lo esté:
+
+```
+NEXT_PUBLIC_PRODUCT_NAME=AxonCalendar
+NEXT_PUBLIC_PLATFORM_URL=https://www.axon-growth.com/
+NEXT_PUBLIC_SIGNUP_URL=https://www.axon-growth.com/
+```
+
+El resto de variables de marca, en [`MARCA.md`](MARCA.md), punto 1.
+
 ## Remotos
 
 | Remoto | Apunta a | Para qué |
