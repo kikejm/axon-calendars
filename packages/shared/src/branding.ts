@@ -50,7 +50,7 @@ export interface PublicBranding {
 }
 
 /** DS primary lime — the default accent when a host hasn't chosen one. */
-export const DEFAULT_ACCENT = '#cbe84f';
+export const DEFAULT_ACCENT = '#f75c03';
 
 /**
  * The ground a branded surface paints on. ADR 0004 gives the booking page a
