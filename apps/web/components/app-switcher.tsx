@@ -109,8 +109,8 @@ export function AppSwitcher({ messages: m }: { messages: SwitcherMessages }) {
                 bare on the light popover it was white on white. `bg-brand-ink`
                 is the one ground that does not flip with the theme (the same
                 fix the Forms switcher carries). */}
-            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-brand-ink">
-              <i aria-hidden className="pi pi-globe text-white" style={{ fontSize: 13 }} />
+            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-white">
+              <img src="/axon-growth-mark.png" alt="" width={20} height={20} className="h-5 w-5 object-contain" />
             </span>
             <span className="flex-1 truncate">Axon Growth</span>
             <i aria-hidden className="pi pi-external-link text-muted-foreground" style={{ fontSize: 13 }} />

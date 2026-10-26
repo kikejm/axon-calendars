@@ -19,7 +19,7 @@ Inventario hecho el 26 oct 26 sobre `upstream/main` (`c7663e2`).
 | Color por defecto de las páginas de reserva | Naranja `#f75c03` (`DEFAULT_ACCENT`) para quien no tiene color guardado | Hecho, 26 oct 26 |
 | Color de las cuentas nuevas | Naranja `#de5303` (`NEW_HOST_ACCENT`) sobre fondo claro: `#f75c03` se queda en 2,9:1 y Dapta pide 3:1 | Hecho, 26 oct 26 |
 | Texto y etiquetas del sello | «Conoce Axon Growth» y «AxonCalendar es una herramienta de Axon Growth». UTM `utm_source=axon-calendar`, `utm_campaign=made-with-axon` | Hecho, 26 oct 26 |
-| Enlace a la plataforma | «Axon Growth», lleva a `https://www.axon-growth.com/` (`NEXT_PUBLIC_PLATFORM_URL`). Sustituye a «Dapta Agents» en la barra y en el selector, con el logo de Axon Growth | Texto hecho, 26 oct 26; falta el logo y fijar la URL en el despliegue |
+| Enlace a la plataforma | «Axon Growth», lleva a `https://www.axon-growth.com/` (`NEXT_PUBLIC_PLATFORM_URL`). Sustituye a «Dapta Agents» en la barra y en el selector, con el símbolo de Axon Growth (`apps/web/public/axon-growth-mark.png`) | Hecho, 26 oct 26; falta fijar la URL en el despliegue |
 | Selector de productos y botón de inicio de sesión | Neutros: «Productos» e «Iniciar sesión» | Hecho, 26 oct 26 |
 | Frases de la suscripción de Dapta AI | Sin suscripción: «Incluido en tu plan»; el ajuste del sello se llama «Marca de AxonCalendar» | Hecho, 26 oct 26 |
 
@@ -142,8 +142,6 @@ desarrolladores. Ficheros tocados, en el registro de `UPSTREAM.md`.
 
 Pendiente:
 
-- Logo de Axon Growth para la fila de la plataforma del selector (hoy, un
-  globo genérico): fichero nuevo en `apps/web/public/`.
 - Variables del despliegue del punto 1 (`NEXT_PUBLIC_PRODUCT_NAME`,
   `NEXT_PUBLIC_PLATFORM_URL`, `NEXT_PUBLIC_SIGNUP_URL`…). Son de compilación.
 
