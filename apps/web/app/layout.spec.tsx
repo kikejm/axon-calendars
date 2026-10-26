@@ -19,7 +19,10 @@ vi.mock('next/headers', () => ({
   headers: async () => ({ get: (name: string) => request.headers[name.toLowerCase()] ?? null }),
 }));
 // The font loader is a build-time transform with nothing to run here.
-vi.mock('next/font/google', () => ({ Figtree: () => ({ variable: 'font-figtree' }) }));
+vi.mock('next/font/google', () => ({
+  Figtree: () => ({ variable: 'font-figtree' }),
+  Alan_Sans: () => ({ variable: 'font-alan-sans' }),
+}));
 // The theme has its own spec; here it only has to answer.
 vi.mock('@/lib/theme.server', () => ({
   resolveDocumentTheme: async () => 'light',

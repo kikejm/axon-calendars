@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Suspense, type ReactNode } from 'react';
 import { Figtree } from 'next/font/google';
+import { alanSans } from '@/lib/axon-font';
 import { getMessages, t } from '@slate/shared';
 import './icons.css';
 import { ErrorAnalytics } from '@/components/analytics/error-analytics';
@@ -95,7 +96,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
     <html
       lang={locale}
       data-theme={theme}
-      className={isPublic ? `${figtree.variable} bp-ground` : figtree.variable}
+      className={isPublic ? `${figtree.variable} ${alanSans.variable} bp-ground` : `${figtree.variable} ${alanSans.variable}`}
       suppressHydrationWarning
     >
       <body className="min-h-dvh bg-background text-foreground">

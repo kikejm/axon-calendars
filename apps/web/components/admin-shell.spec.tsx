@@ -610,9 +610,10 @@ describe('AdminShell: a fork', () => {
       expect(rest).toHaveLength(0);
       expect(wide!.className.split(' ')).toEqual(expect.arrayContaining(['hidden', 'min-[360px]:flex']));
       expect(narrow!.className.split(' ')).toEqual(expect.arrayContaining(['min-[360px]:hidden']));
-      expect(wide!.textContent).toBe('AAcme Booking');
-      expect(narrow!.textContent).toBe('A');
-      expect(header.querySelector('svg')).toBeNull();
+      // Fork de Axon (docs/axon/MARCA.md): nombre con punto en ancho, icono en estrecho.
+      expect(wide!.textContent).toBe('Acme Booking');
+      expect(narrow!.textContent).toBe('');
+      expect(narrow!.querySelector('svg')).not.toBeNull();
     } finally {
       vi.unstubAllEnvs();
     }

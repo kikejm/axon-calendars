@@ -26,17 +26,18 @@ describe('BrandMark', () => {
     }
   });
 
-  it('falls back to a letter chip on a fork', async () => {
+  // Fork de Axon (docs/axon/MARCA.md): el icono de AxonCalendar sustituye al cuadradito con la inicial.
+  it('falls back to the Axon icon on a fork', async () => {
     const html = await renderMark('Acme Booking');
-    expect(html).not.toContain('<svg');
-    expect(html).toContain('bg-primary');
-    expect(html).toContain('>A<');
+    expect(html).toContain('<svg');
+    expect(html).toContain('#1a1a1c');
+    expect(html).not.toContain('>A<');
   });
 
   it('never carries Dapta artwork on the default name', async () => {
     const html = await renderMark(undefined);
-    expect(html).not.toContain('<svg');
-    expect(html).toContain('>C<');
+    expect(html).not.toContain('mask');
+    expect(html).toContain('#1a1a1c');
   });
 
   it('gives each instance its own mask id so two marks can coexist', async () => {
@@ -93,11 +94,12 @@ describe('BrandWordmark', () => {
     for (const id of ids) expect(html).toContain(`url(#${id})`);
   });
 
-  it('falls back to the letter chip and the name, on one line, on a fork', async () => {
+  // Fork de Axon: el nombre en Alan Sans 800 con el punto del color de acento, sin icono.
+  it('falls back to the name and the accent dot, on one line, on a fork', async () => {
     const html = await renderWordmark('Acme Booking');
     expect(html).not.toContain('<svg');
-    expect(html).toContain('>A<');
     expect(html).toContain('>Acme Booking<');
+    expect(html).toContain('var(--signal)');
     expect(html).toContain('truncate');
   });
 });

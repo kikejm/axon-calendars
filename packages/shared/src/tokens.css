@@ -200,11 +200,11 @@
   /* Signal Green: a switch that is on, progress, confirmed. `--signal-edge` rims
      the fill and `--focus` draws the focus ring, at a lightness that clears 3:1
      on this theme's page. */
-  --signal: #3ddc84;
+  --signal: #F75C03;
   --signal-foreground: #1a1a1c;
-  --signal-edge: #3ddc84;
-  --signal-ink: #5fe39b;
-  --focus: #3ddc84;
+  --signal-edge: #F75C03;
+  --signal-ink: #fc7a30;
+  --focus: #F75C03;
 
   /* The data channel. See the header. */
   --warning: #f5a524;
@@ -242,7 +242,7 @@
      saying "you can type here" (WCAG 1.4.11). */
   --border: rgba(255, 255, 255, 0.1);
   --input: rgba(255, 255, 255, 0.36);
-  --ring: #3ddc84;
+  --ring: #F75C03;
 
   /* Corner rounding. Controls 8, cards 16; the full ladder is in globals.css. */
   --radius: 0.5rem; /* 8px: buttons, inputs, selects, menu rows */
@@ -272,13 +272,13 @@
   --primary-ink: #1a1a1c;
   /* The fill stays the brand green; the EDGE carries the 3:1 (3.3:1 on paper).
      Darkening the fill instead would lose the one saturated brand colour. */
-  --signal: #3ddc84;
+  --signal: #F75C03;
   --signal-foreground: #1a1a1c;
-  --signal-edge: #1fa35a;
-  --signal-ink: #0e7a3f; /* 5.4:1 on paper */
+  --signal-edge: #de5303;
+  --signal-ink: #c64a02; /* 4.8:1 on paper */
   /* One step darker than `--signal-edge`: the ring also lands on `--muted` (a
      selected row, a chip), where the edge value measures 2.9:1. 3.2:1 there. */
-  --focus: #1d9a55;
+  --focus: #de5303;
   --warning: #f5a524;
   --warning-ink: #8a5700;
   --secondary: #67676f;
@@ -294,7 +294,7 @@
   --destructive-foreground: #ffffff;
   --border: #e6e6e8;
   --input: #8f8f96;
-  --ring: #1d9a55;
+  --ring: #de5303;
 }
 
 /* The no-attribute fallback: whoever renders this sheet stamped no `data-theme`,
@@ -319,11 +319,11 @@
     --primary-foreground: #ffffff;
     --primary-edge: #1a1a1c;
     --primary-ink: #1a1a1c;
-    --signal: #3ddc84;
+    --signal: #F75C03;
     --signal-foreground: #1a1a1c;
-    --signal-edge: #1fa35a;
-    --signal-ink: #0e7a3f;
-    --focus: #1d9a55;
+    --signal-edge: #de5303;
+    --signal-ink: #c64a02;
+    --focus: #de5303;
     --warning: #f5a524;
     --warning-ink: #8a5700;
     --secondary: #67676f;
@@ -337,7 +337,7 @@
     --destructive-foreground: #ffffff;
     --border: #e6e6e8;
     --input: #8f8f96;
-    --ring: #1d9a55;
+    --ring: #de5303;
   }
 }
 

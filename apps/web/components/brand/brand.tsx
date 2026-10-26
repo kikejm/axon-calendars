@@ -1,5 +1,6 @@
 import { IS_DAPTA_BRAND, PRODUCT_NAME } from '@/lib/product-name';
 import { CalendarsMark, CalendarsWordmark } from './calendars-logo';
+import { AxonGlyph, AxonIcon, AxonWordmark } from './axon-logo';
 
 export { IS_DAPTA_BRAND, PRODUCT_NAME };
 
@@ -27,12 +28,7 @@ export function BrandWordmark({ className, labelled }: { className?: string; lab
   if (IS_DAPTA_BRAND) {
     return <CalendarsWordmark className={className} title={labelled ? PRODUCT_NAME : undefined} />;
   }
-  return (
-    <span className="flex min-w-0 items-center gap-inline">
-      <FallbackChip />
-      <span className="truncate text-sm font-semibold text-foreground">{PRODUCT_NAME}</span>
-    </span>
-  );
+  return <AxonWordmark />;
 }
 
 /**
@@ -54,18 +50,10 @@ export function BrandMark({ className, labelled }: { className?: string; labelle
  */
 export function BrandTileMark({ size }: { size: number }) {
   if (IS_DAPTA_BRAND) return <CalendarsMark style={{ width: size * 0.74, height: 'auto' }} />;
-  return (
-    <span className="font-semibold leading-none" style={{ fontSize: Math.round(size * 0.55) }}>
-      {PRODUCT_NAME.charAt(0)}
-    </span>
-  );
+  return <AxonGlyph size={Math.round(size * 0.6)} />;
 }
 
 /** The pre-logo placeholder, kept as the fork fallback rather than deleted. */
 function FallbackChip() {
-  return (
-    <span className="rounded-md bg-primary px-inline py-tight text-sm font-semibold text-primary-foreground">
-      {PRODUCT_NAME.charAt(0)}
-    </span>
-  );
+  return <AxonIcon />;
 }

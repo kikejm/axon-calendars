@@ -97,8 +97,8 @@
      preflight draws every `<code>` from this token; pointing the role at the
      sans retires the second face everywhere at once without touching a screen,
      which is the next phase's job. */
-  --font-sans: var(--font-figtree), Figtree, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-mono: var(--font-figtree), Figtree, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-sans: var(--font-alan-sans), 'Alan Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: var(--font-alan-sans), 'Alan Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
 
   /* The type scale, pinned end to end. Before this it was eight Tailwind defaults
      plus ten arbitrary `text-[10px]` / `text-[11px]` sites — a scale nobody could

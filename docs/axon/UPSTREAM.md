@@ -14,6 +14,7 @@ Este documento es público: aquí no van clientes, precios, cuentas ni decisione
 internas.
 
 Para arrancarlo en local en Windows: [`LOCAL.md`](LOCAL.md).
+Inventario y plan de la marca propia: [`MARCA.md`](MARCA.md).
 
 ## Remotos
 
@@ -108,6 +109,7 @@ cambios de marca hechos, la sincronización se hace siempre así, en local.
 | Zona de Dapta | Quedarse con lo de Dapta (`git checkout --theirs <fichero>`). Si había un cambio nuestro anotado en el registro, volver a aplicarlo encima |
 | Zona de marca | Coger lo de Dapta y volver a poner nuestra marca encima. Si Dapta cambió el diseño, decidir: adaptarlo a nuestra marca, cogerlo tal cual o no usarlo. Anotarlo en el registro |
 | Zona nuestra | No debería pasar. Si pasa, Dapta ha creado un fichero con el mismo nombre: renombrar el nuestro |
+| Capturas de tests (`__snapshots__`) | Coger las de Dapta y regenerarlas (`pnpm exec vitest run <test> -u`); revisar que la diferencia sea solo nuestra marca |
 
 `rerere` (activado arriba) recuerda cada resolución y la repite sola la próxima
 vez que aparezca el mismo conflicto. Es una opción de cada clon: hay que
@@ -135,3 +137,10 @@ conflictos y se mantiene al día en el mismo commit que el cambio.
 | Fichero | Zona | Qué cambiamos | Por qué | Fecha |
 |---|---|---|---|---|
 | `CLAUDE.md` | De Dapta | Primera línea: importa este documento | Que cualquier agente lea estas reglas antes que las de Dapta | 26 oct 26 |
+| `packages/shared/src/tokens.css` | Marca | `--signal*`, `--focus` y `--ring` del verde de Dapta al naranja de AxonCalendar, en los tres bloques (oscuro, claro y claro por preferencia del sistema) | Color de acento (MARCA.md, punto 2) | 26 oct 26 |
+| `apps/web/app/globals.css` | Marca | `--font-sans` y `--font-mono` apuntan a Alan Sans | Letra (MARCA.md, punto 3) | 26 oct 26 |
+| `apps/web/app/layout.tsx` | Marca | Importa `lib/axon-font.ts` y añade su variable a `<html>`; Figtree se sigue cargando | Cargar Alan Sans con el mínimo cambio | 26 oct 26 |
+| `apps/web/app/layout.spec.tsx` | De Dapta (tests) | El simulacro de `next/font/google` incluye `Alan_Sans` | Sin él, el test del layout no arranca | 26 oct 26 |
+| `apps/web/components/brand/brand.tsx` | Marca | En un fork, el nombre con punto (`AxonWordmark`), el icono (`AxonIcon`) y el dibujo para baldosas (`AxonGlyph`) sustituyen a la inicial | Logo (MARCA.md, punto 4) | 26 oct 26 |
+| `apps/web/components/brand/brand.spec.tsx`, `apps/web/components/admin-shell.spec.tsx` | De Dapta (tests) | Tres tests de `brand.spec` y uno de `admin-shell.spec` esperan ahora nuestro logo en vez de la inicial | Comprueban justo lo que cambiamos | 26 oct 26 |
+| `apps/web/app/icon.svg`, `apple-icon.png`, `favicon.ico` | Marca | Favicon e iconos de AxonCalendar | Logo (MARCA.md, punto 4) | 26 oct 26 |
