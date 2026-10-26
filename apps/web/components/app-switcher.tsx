@@ -110,9 +110,9 @@ export function AppSwitcher({ messages: m }: { messages: SwitcherMessages }) {
                 is the one ground that does not flip with the theme (the same
                 fix the Forms switcher carries). */}
             <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-brand-ink">
-              <img src="/dapta-mark.png" alt="" width={16} height={16} className="h-4 w-4 object-contain" />
+              <i aria-hidden className="pi pi-globe text-white" style={{ fontSize: 13 }} />
             </span>
-            <span className="flex-1 truncate">Dapta Agents</span>
+            <span className="flex-1 truncate">Axon Growth</span>
             <i aria-hidden className="pi pi-external-link text-muted-foreground" style={{ fontSize: 13 }} />
             <span className="sr-only">{m.opensNewTab}</span>
           </a>

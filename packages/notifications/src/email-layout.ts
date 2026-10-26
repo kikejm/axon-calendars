@@ -67,7 +67,7 @@ export const EMAIL_COLORS = {
   muted: '#45454c', // --muted-foreground
   faint: '#67676f', // --faint
   border: '#e6e6e8', // --border
-  signal: '#0e7a3f', // --signal-ink
+  signal: '#c64a02', // --signal-ink
   warning: '#8a5700', // --warning-ink
   destructive: '#cd2b31', // --destructive
   onInk: '#ffffff', // --primary-foreground
@@ -344,7 +344,7 @@ export function renderBrandedHtml(
   // (the same switch as the page's badge). The host's own copy never carries it.
   const signup = audience === 'attendee' ? growth.signupUrl : null;
   const madeWith = signup
-    ? `<div style="margin:0 0 6px;">${esc(es ? 'Hecho con Dapta Calendars' : 'Made with Dapta Calendars')} · ` +
+    ? `<div style="margin:0 0 6px;">${esc(es ? 'Hecho con AxonCalendar' : 'Made with AxonCalendar')} · ` +
       `<a href="${safeHref(signup)}" style="color:${C.ink};text-decoration:underline;">${esc(es ? 'Crea tu calendario gratis' : 'Create your free calendar')}</a></div>`
     : '';
   return frame(

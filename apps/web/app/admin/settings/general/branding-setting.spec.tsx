@@ -95,7 +95,7 @@ describe('BrandingSetting', () => {
     expect(chip.textContent).toBe(en.chipShowingAgain);
     expect(chip.getAttribute('data-status')).toBe('pending');
     expect(el.querySelector('[data-testid="branding-lapsed"]')!.textContent).toBe(
-      'Your Dapta AI subscription ended, the branding is showing again',
+      'Your plan no longer includes it, the branding is showing again',
     );
   });
 
@@ -103,7 +103,7 @@ describe('BrandingSetting', () => {
     const { sw, el } = mount(NOT_PAYING);
     expect(sw.disabled).toBe(true);
     const link = el.querySelector<HTMLAnchorElement>('[data-testid="branding-included"] a')!;
-    expect(link.textContent).toBe('Included with your Dapta AI subscription');
+    expect(link.textContent).toBe('Included in your plan');
     expect(link.getAttribute('href')).toBe(PLATFORM);
     expect(link.getAttribute('target')).toBe('_blank');
   });
@@ -123,12 +123,12 @@ describe('BrandingSetting', () => {
 
   it('speaks Spanish', () => {
     const { el, chip } = mount(LAPSED, { locale: 'es' });
-    expect(el.textContent).toContain('Marca de Dapta');
-    expect(el.textContent).toContain('Tu suscripción de Dapta AI terminó, la marca se muestra de nuevo');
+    expect(el.textContent).toContain('Marca de AxonCalendar');
+    expect(el.textContent).toContain('Tu plan ya no lo incluye, la marca se muestra de nuevo');
     expect(chip.textContent).toBe(es.chipShowingAgain);
     act(() => root!.unmount());
     const second = mount(NOT_PAYING, { locale: 'es' });
-    expect(second.el.textContent).toContain('Incluido con tu suscripción de Dapta AI');
+    expect(second.el.textContent).toContain('Incluido en tu plan');
   });
 
   it('turning it off stores the choice and shows the new state', async () => {

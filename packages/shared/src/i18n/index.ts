@@ -1,5 +1,7 @@
 /** i18n for the public booking surface — EN/ES message catalogs + interpolation. */
 
+import { withAxonBrand } from './axon-brand';
+
 export type Locale = 'en' | 'es';
 
 /** The notification-email catalog (mirrors @slate/notifications EMAIL_TEMPLATE_KEYS). */
@@ -5219,7 +5221,7 @@ export const messages = { en, es } as const;
 
 /** Pick messages for a locale, defaulting to English. */
 export function getMessages(locale: string): BookingMessages {
-  return locale.startsWith('es') ? es : en;
+  return locale.startsWith('es') ? withAxonBrand(es, 'es') : withAxonBrand(en, 'en');
 }
 
 /** Interpolate `{name}` placeholders in a message string. */

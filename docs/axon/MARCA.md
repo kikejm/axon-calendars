@@ -16,6 +16,9 @@ Inventario hecho el 26 oct 26 sobre `upstream/main` (`c7663e2`).
 | Letra | **Alan Sans**, la misma que AxonSynapse y el resto de Axon | Decidido, 26 oct 26 |
 | Colores | **Naranja AxonCalendar** (rectifica el azul, 26 oct 26). Claro: relleno `#F75C03` con texto `#1a1a1c` encima (blanco no llega: 3,2:1); texto o línea en naranja sobre fondo claro, `#c64a02`. Oscuro: el mismo `#F75C03` de relleno con texto `#1a1a1c`; texto en naranja sobre fondo oscuro, `#fc7a30`. Sustituye al verde de Dapta | Decidido, 26 oct 26 |
 | Sello «Hecho con…» | A dónde lleva y si se muestra | Pendiente |
+| Enlace a la plataforma | «Axon Growth», lleva a la web de Axon (`NEXT_PUBLIC_PLATFORM_URL`). Sustituye a «Dapta Agents» en la barra y en el selector | Hecho en código, 26 oct 26; falta fijar la URL en el despliegue |
+| Selector de productos y botón de inicio de sesión | Neutros: «Productos» e «Iniciar sesión» | Hecho, 26 oct 26 |
+| Frases de la suscripción de Dapta AI | Sin suscripción: «Incluido en tu plan»; el ajuste del sello se llama «Marca de AxonCalendar» | Hecho, 26 oct 26 |
 
 ## Lo que Dapta ya dejó preparado para un fork
 
@@ -127,18 +130,21 @@ No son marca visible o romperían la compatibilidad con Dapta:
 ## Estado (26 oct 26)
 
 Hecho: nombre (por `.env` en local), letra, color de acento, logo con punto,
-favicon e icono de iOS. Ficheros tocados, en el registro de `UPSTREAM.md`.
+favicon e icono de iOS. Textos con la marca de Dapta, mediante la capa
+`packages/shared/src/i18n/axon-brand.ts` (lo que quede con «Dapta» sale como
+«Axon Growth»). Pie y color de acento de los emails. Verdes de Dapta escritos
+a mano: el brillo de la barra lateral y las animaciones de la página para
+desarrolladores. Ficheros tocados, en el registro de `UPSTREAM.md`.
 
 Pendiente:
 
-- Textos con la marca de Dapta (punto 5) y emails (punto 6).
-- Verdes de Dapta escritos a mano fuera de `tokens.css`: el brillo de «Conecta
-  tu agente» en la barra lateral (`apps/web/app/globals.css`, `rgb(61 220 132)`)
-  y las animaciones de la página para desarrolladores
-  (`apps/web/app/admin/developers/walk-kit.tsx`, `walkthrough.tsx`,
-  `app-frames.tsx`).
-- Color por defecto de las páginas públicas de quien no eligió uno.
-- El nombre en producción va por variables de entorno del despliegue.
+- Color por defecto de las páginas públicas de quien no eligió uno
+  (`DEFAULT_ACCENT` en `branding.ts`, hoy el lima de Dapta `#cbe84f`).
+- Icono de Axon Growth para la fila de la plataforma del selector (hoy, un
+  globo genérico).
+- Sello «Hecho con…»: a dónde lleva y si se muestra.
+- Variables del despliegue: `NEXT_PUBLIC_PRODUCT_NAME`,
+  `NEXT_PUBLIC_PLATFORM_URL` y las demás del punto 1.
 
 ## Orden de trabajo propuesto
 

@@ -73,12 +73,12 @@ describe('renderBrandedHtml', () => {
 
   it('names the product only with a signup destination, and only to the invitee', () => {
     const none = renderBrandedHtml('confirmation', vars(), 'en');
-    expect(none).not.toContain('Dapta Calendars');
+    expect(none).not.toContain('AxonCalendar');
     expect(none).not.toContain('Create your free calendar');
 
     const url = 'https://signup.example.test/?utm_medium=email';
     const withUrl = renderBrandedHtml('confirmation', vars(), 'en', 'attendee', { signupUrl: url });
-    expect(withUrl.match(/Dapta Calendars/g)).toHaveLength(1);
+    expect(withUrl.match(/AxonCalendar/g)).toHaveLength(1);
     expect(withUrl).toContain('Create your free calendar');
     expect(withUrl).toContain(`href="${url}"`);
     expect(renderBrandedHtml('confirmation', vars(), 'es', 'attendee', { signupUrl: url })).toContain(
@@ -86,7 +86,7 @@ describe('renderBrandedHtml', () => {
     );
 
     const host = renderBrandedHtml('confirmation', vars(), 'en', 'host', { signupUrl: url });
-    expect(host).not.toContain('Dapta Calendars');
+    expect(host).not.toContain('AxonCalendar');
   });
 
   it('a reschedule shows the old time struck through', () => {

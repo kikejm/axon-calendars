@@ -63,7 +63,7 @@ exports[`lifecycle emails (en) > to the attendee > confirmation 1`] = `
   "html": "<div style="margin:0;padding:32px 12px;background:#f2f2f3;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:520px;margin:0 auto;">
     <tr><td style="background:#ffffff;border:1px solid #e6e6e8;border-radius:16px;padding:32px 28px;">
-      <div style="font-size:13px;line-height:18px;font-weight:600;color:#0e7a3f;margin:0 0 12px;"><span style="display:inline-block;width:8px;height:8px;border-radius:4px;background:#0e7a3f;margin:0 8px 1px 0;vertical-align:middle;"></span>Confirmed</div>
+      <div style="font-size:13px;line-height:18px;font-weight:600;color:#c64a02;margin:0 0 12px;"><span style="display:inline-block;width:8px;height:8px;border-radius:4px;background:#c64a02;margin:0 8px 1px 0;vertical-align:middle;"></span>Confirmed</div>
       <div style="color:#1a1a1c;font-size:24px;font-weight:700;line-height:30px;letter-spacing:-0.01em;margin:0 0 8px;">Intro Call</div>
       <div style="color:#45454c;font-size:15px;line-height:22px;margin:0 0 20px;">Your meeting with Alex Rivera is confirmed. The calendar invite is attached.</div>
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #e6e6e8;border-bottom:1px solid #e6e6e8;">
@@ -192,7 +192,7 @@ exports[`lifecycle emails (en) > to the attendee > reschedule 1`] = `
   "html": "<div style="margin:0;padding:32px 12px;background:#f2f2f3;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:520px;margin:0 auto;">
     <tr><td style="background:#ffffff;border:1px solid #e6e6e8;border-radius:16px;padding:32px 28px;">
-      <div style="font-size:13px;line-height:18px;font-weight:600;color:#0e7a3f;margin:0 0 12px;"><span style="display:inline-block;width:8px;height:8px;border-radius:4px;background:#0e7a3f;margin:0 8px 1px 0;vertical-align:middle;"></span>Rescheduled</div>
+      <div style="font-size:13px;line-height:18px;font-weight:600;color:#c64a02;margin:0 0 12px;"><span style="display:inline-block;width:8px;height:8px;border-radius:4px;background:#c64a02;margin:0 8px 1px 0;vertical-align:middle;"></span>Rescheduled</div>
       <div style="color:#1a1a1c;font-size:24px;font-weight:700;line-height:30px;letter-spacing:-0.01em;margin:0 0 8px;">Intro Call</div>
       <div style="color:#45454c;font-size:15px;line-height:22px;margin:0 0 20px;">Your meeting with Alex Rivera has a new time. The updated invite is attached.</div>
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #e6e6e8;border-bottom:1px solid #e6e6e8;">
@@ -305,7 +305,7 @@ exports[`lifecycle emails (en) > to the host > confirmation 1`] = `
   "html": "<div style="margin:0;padding:32px 12px;background:#f2f2f3;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:520px;margin:0 auto;">
     <tr><td style="background:#ffffff;border:1px solid #e6e6e8;border-radius:16px;padding:32px 28px;">
-      <div style="font-size:13px;line-height:18px;font-weight:600;color:#0e7a3f;margin:0 0 12px;"><span style="display:inline-block;width:8px;height:8px;border-radius:4px;background:#0e7a3f;margin:0 8px 1px 0;vertical-align:middle;"></span>Confirmed</div>
+      <div style="font-size:13px;line-height:18px;font-weight:600;color:#c64a02;margin:0 0 12px;"><span style="display:inline-block;width:8px;height:8px;border-radius:4px;background:#c64a02;margin:0 8px 1px 0;vertical-align:middle;"></span>Confirmed</div>
       <div style="color:#1a1a1c;font-size:24px;font-weight:700;line-height:30px;letter-spacing:-0.01em;margin:0 0 8px;">Intro Call</div>
       <div style="color:#45454c;font-size:15px;line-height:22px;margin:0 0 20px;">Your meeting with Sam Guest is confirmed. The calendar invite is attached.</div>
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #e6e6e8;border-bottom:1px solid #e6e6e8;">
@@ -460,7 +460,7 @@ exports[`lifecycle emails (en) > to the host > reschedule 1`] = `
   "html": "<div style="margin:0;padding:32px 12px;background:#f2f2f3;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:520px;margin:0 auto;">
     <tr><td style="background:#ffffff;border:1px solid #e6e6e8;border-radius:16px;padding:32px 28px;">
-      <div style="font-size:13px;line-height:18px;font-weight:600;color:#0e7a3f;margin:0 0 12px;"><span style="display:inline-block;width:8px;height:8px;border-radius:4px;background:#0e7a3f;margin:0 8px 1px 0;vertical-align:middle;"></span>Rescheduled</div>
+      <div style="font-size:13px;line-height:18px;font-weight:600;color:#c64a02;margin:0 0 12px;"><span style="display:inline-block;width:8px;height:8px;border-radius:4px;background:#c64a02;margin:0 8px 1px 0;vertical-align:middle;"></span>Rescheduled</div>
       <div style="color:#1a1a1c;font-size:24px;font-weight:700;line-height:30px;letter-spacing:-0.01em;margin:0 0 8px;">Intro Call</div>
       <div style="color:#45454c;font-size:15px;line-height:22px;margin:0 0 20px;">Your meeting with Sam Guest has a new time. The updated invite is attached.</div>
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #e6e6e8;border-bottom:1px solid #e6e6e8;">
@@ -585,7 +585,7 @@ exports[`lifecycle emails (es) > to the attendee > confirmation 1`] = `
   "html": "<div style="margin:0;padding:32px 12px;background:#f2f2f3;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:520px;margin:0 auto;">
     <tr><td style="background:#ffffff;border:1px solid #e6e6e8;border-radius:16px;padding:32px 28px;">
-      <div style="font-size:13px;line-height:18px;font-weight:600;color:#0e7a3f;margin:0 0 12px;"><span style="display:inline-block;width:8px;height:8px;border-radius:4px;background:#0e7a3f;margin:0 8px 1px 0;vertical-align:middle;"></span>Confirmada</div>
+      <div style="font-size:13px;line-height:18px;font-weight:600;color:#c64a02;margin:0 0 12px;"><span style="display:inline-block;width:8px;height:8px;border-radius:4px;background:#c64a02;margin:0 8px 1px 0;vertical-align:middle;"></span>Confirmada</div>
       <div style="color:#1a1a1c;font-size:24px;font-weight:700;line-height:30px;letter-spacing:-0.01em;margin:0 0 8px;">Intro Call</div>
       <div style="color:#45454c;font-size:15px;line-height:22px;margin:0 0 20px;">Tu reunión con Alex Rivera quedó confirmada. La invitación de calendario va adjunta.</div>
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #e6e6e8;border-bottom:1px solid #e6e6e8;">
@@ -714,7 +714,7 @@ exports[`lifecycle emails (es) > to the attendee > reschedule 1`] = `
   "html": "<div style="margin:0;padding:32px 12px;background:#f2f2f3;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:520px;margin:0 auto;">
     <tr><td style="background:#ffffff;border:1px solid #e6e6e8;border-radius:16px;padding:32px 28px;">
-      <div style="font-size:13px;line-height:18px;font-weight:600;color:#0e7a3f;margin:0 0 12px;"><span style="display:inline-block;width:8px;height:8px;border-radius:4px;background:#0e7a3f;margin:0 8px 1px 0;vertical-align:middle;"></span>Reagendada</div>
+      <div style="font-size:13px;line-height:18px;font-weight:600;color:#c64a02;margin:0 0 12px;"><span style="display:inline-block;width:8px;height:8px;border-radius:4px;background:#c64a02;margin:0 8px 1px 0;vertical-align:middle;"></span>Reagendada</div>
       <div style="color:#1a1a1c;font-size:24px;font-weight:700;line-height:30px;letter-spacing:-0.01em;margin:0 0 8px;">Intro Call</div>
       <div style="color:#45454c;font-size:15px;line-height:22px;margin:0 0 20px;">Tu reunión con Alex Rivera tiene una nueva hora. La invitación actualizada va adjunta.</div>
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #e6e6e8;border-bottom:1px solid #e6e6e8;">
@@ -827,7 +827,7 @@ exports[`lifecycle emails (es) > to the host > confirmation 1`] = `
   "html": "<div style="margin:0;padding:32px 12px;background:#f2f2f3;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:520px;margin:0 auto;">
     <tr><td style="background:#ffffff;border:1px solid #e6e6e8;border-radius:16px;padding:32px 28px;">
-      <div style="font-size:13px;line-height:18px;font-weight:600;color:#0e7a3f;margin:0 0 12px;"><span style="display:inline-block;width:8px;height:8px;border-radius:4px;background:#0e7a3f;margin:0 8px 1px 0;vertical-align:middle;"></span>Confirmada</div>
+      <div style="font-size:13px;line-height:18px;font-weight:600;color:#c64a02;margin:0 0 12px;"><span style="display:inline-block;width:8px;height:8px;border-radius:4px;background:#c64a02;margin:0 8px 1px 0;vertical-align:middle;"></span>Confirmada</div>
       <div style="color:#1a1a1c;font-size:24px;font-weight:700;line-height:30px;letter-spacing:-0.01em;margin:0 0 8px;">Intro Call</div>
       <div style="color:#45454c;font-size:15px;line-height:22px;margin:0 0 20px;">Tu reunión con Sam Guest quedó confirmada. La invitación de calendario va adjunta.</div>
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #e6e6e8;border-bottom:1px solid #e6e6e8;">
@@ -982,7 +982,7 @@ exports[`lifecycle emails (es) > to the host > reschedule 1`] = `
   "html": "<div style="margin:0;padding:32px 12px;background:#f2f2f3;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:520px;margin:0 auto;">
     <tr><td style="background:#ffffff;border:1px solid #e6e6e8;border-radius:16px;padding:32px 28px;">
-      <div style="font-size:13px;line-height:18px;font-weight:600;color:#0e7a3f;margin:0 0 12px;"><span style="display:inline-block;width:8px;height:8px;border-radius:4px;background:#0e7a3f;margin:0 8px 1px 0;vertical-align:middle;"></span>Reagendada</div>
+      <div style="font-size:13px;line-height:18px;font-weight:600;color:#c64a02;margin:0 0 12px;"><span style="display:inline-block;width:8px;height:8px;border-radius:4px;background:#c64a02;margin:0 8px 1px 0;vertical-align:middle;"></span>Reagendada</div>
       <div style="color:#1a1a1c;font-size:24px;font-weight:700;line-height:30px;letter-spacing:-0.01em;margin:0 0 8px;">Intro Call</div>
       <div style="color:#45454c;font-size:15px;line-height:22px;margin:0 0 20px;">Tu reunión con Sam Guest tiene una nueva hora. La invitación actualizada va adjunta.</div>
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #e6e6e8;border-bottom:1px solid #e6e6e8;">
