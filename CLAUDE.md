@@ -1,3 +1,5 @@
+@docs/axon/UPSTREAM.md
+
 # Dapta Calendars — guide for Claude Code (and any AI coding agent)
 
 This file is loaded automatically by Claude Code for anyone working in this repo.
