@@ -182,7 +182,7 @@ describe('BookingNotifier: the footer line and the invite', () => {
     const { sent, provider } = capture();
     await new BookingNotifier(provider as never, { signupUrl: 'https://signup.example.test/' }).sendConfirmation(booking);
     const m = sent[0]!;
-    expect(m.html!.match(/Dapta Calendars/g)).toHaveLength(1);
+    expect(m.html!.match(/AxonCalendar/g)).toHaveLength(1);
     expect(m.html).toContain('https://signup.example.test/');
     expect(m.headers?.['X-Booking-Uid']).toBe('bk_footer_1');
     expect(String(m.attachments?.[0]?.content)).toContain('UID:bk_footer_1');
@@ -194,7 +194,7 @@ describe('BookingNotifier: the footer line and the invite', () => {
     const notifier = (p: unknown) => new BookingNotifier(p as never, { signupUrl: 'https://signup.example.test/' });
     await notifier(shown.provider).sendConfirmation({ ...booking, showBranding: true });
     await notifier(hidden.provider).sendConfirmation({ ...booking, showBranding: false });
-    expect(hidden.sent[0]!.html).not.toContain('Dapta Calendars');
+    expect(hidden.sent[0]!.html).not.toContain('AxonCalendar');
     expect(hidden.sent[0]!.html).not.toContain('https://signup.example.test/');
     // Branding on renders exactly what a notification without the field renders.
     const absent = capture();
@@ -229,7 +229,7 @@ describe('BookingNotifier: the footer line and the invite', () => {
   it('a bare fork (no destination): no product in the email at all', async () => {
     const { sent, provider } = capture();
     await new BookingNotifier(provider as never).sendConfirmation(booking);
-    expect(sent[0]!.html).not.toContain('Dapta Calendars');
+    expect(sent[0]!.html).not.toContain('AxonCalendar');
     expect(String(sent[0]!.attachments?.[0]?.content)).toContain('UID:bk_footer_1');
   });
 });

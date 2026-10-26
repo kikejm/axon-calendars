@@ -88,7 +88,7 @@ function MeetingLines({
       <Line d={d + 0.4}>
         <span style={{ color }}>{bullet}</span> {a.found}{' '}
         {a.slots.map((slot, i) => (
-          <span key={slot} className={i === BOOKED_SLOT ? 'font-semibold text-[#3DDC84]' : 'text-[#808080]'}>
+          <span key={slot} className={i === BOOKED_SLOT ? 'font-semibold text-[#fc7a30]' : 'text-[#808080]'}>
             {slot}
             {i < a.slots.length - 1 ? '  ' : ''}
           </span>
@@ -96,7 +96,7 @@ function MeetingLines({
       </Line>
       {call('book_meeting', d + 1)}
       <Line d={d + 1.4}>
-        <span style={{ color }}>{bullet}</span> <span className="text-[#3DDC84]">✓ {a.booked}:</span>{' '}
+        <span style={{ color }}>{bullet}</span> <span className="text-[#fc7a30]">✓ {a.booked}:</span>{' '}
         <span className="font-semibold text-white">{a.meeting}</span>
       </Line>
       <Line d={d + 1.6} className="pl-4 text-[#808080]">

@@ -50,7 +50,7 @@ export interface PublicBranding {
 }
 
 /** DS primary lime — the default accent when a host hasn't chosen one. */
-export const DEFAULT_ACCENT = '#cbe84f';
+export const DEFAULT_ACCENT = '#f75c03';
 
 /**
  * The ground a branded surface paints on. ADR 0004 gives the booking page a
@@ -530,7 +530,7 @@ export function defaultBranding(displayName: string, avatarUrl: string | null = 
  * the light canvas a new host is also born with, it is the primary button, the
  * selected day and the selected time, and nothing on the page is louder than it.
  */
-export const NEW_HOST_ACCENT = '#1a1a1c';
+export const NEW_HOST_ACCENT = '#de5303';
 
 /** The canvas a host is born with: paper, where the whole category renders. */
 export const NEW_HOST_THEME: BrandCanvas = 'light';

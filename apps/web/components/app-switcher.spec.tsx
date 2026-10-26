@@ -124,7 +124,7 @@ describe('AppSwitcher', () => {
   it('opens with Forms alone when there is no platform to link', async () => {
     const el = await openSwitcher({ NEXT_PUBLIC_FORMS_URL: 'https://forms.example.test' });
     expect(formsRow(el)?.tagName).toBe('A');
-    expect(el.textContent).not.toContain('Dapta Agents');
+    expect(el.textContent).not.toContain('Axon Growth');
   });
 
   it('calls it dForms on Dapta\'s own build, and Forms on a fork', async () => {

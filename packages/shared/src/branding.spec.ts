@@ -436,11 +436,11 @@ describe('brandVars — the single block a branded surface emits', () => {
       // darken it to olive. It now renders as picked, and `accentCanvasContrast`
       // is below the floor — which is exactly when the studio shows its warning.
       const below = STUDIO_PRESETS.filter((c) => accentCanvasContrast(c, 'light') < MIN_ACCENT_CONTRAST);
-      expect(below).toContain(DEFAULT_ACCENT);
+      expect(below).toContain('#cbe84f');
       // And it is not an artefact of the strict reference ground: the lime fails
       // on the real light page and on a white card too.
       for (const ground of GROUNDS.light) {
-        expect(contrastRatioExact(DEFAULT_ACCENT, ground), ground).toBeLessThan(NON_TEXT);
+        expect(contrastRatioExact('#cbe84f', ground), ground).toBeLessThan(NON_TEXT);
       }
     });
 
@@ -467,7 +467,7 @@ describe('withNewHostBranding: what a host is born with', () => {
   it('writes ink on paper into an empty config', () => {
     expect(withNewHostBranding()).toEqual({ brandColor: NEW_HOST_ACCENT, style: { theme: NEW_HOST_THEME } });
     expect(withNewHostBranding({ brandColor: null, style: null })).toEqual({
-      brandColor: '#1a1a1c',
+      brandColor: '#de5303',
       style: { theme: 'light' },
     });
   });
@@ -491,7 +491,7 @@ describe('withNewHostBranding: what a host is born with', () => {
   });
 
   it('does not move what an ABSENT config renders: old hosts keep the dark lime page', () => {
-    expect(DEFAULT_ACCENT).toBe('#cbe84f');
+    expect(DEFAULT_ACCENT).toBe('#f75c03');
     expect(DEFAULT_BOOKING_THEME).toBe('dark');
   });
 

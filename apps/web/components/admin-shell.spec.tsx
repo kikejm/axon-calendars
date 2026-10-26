@@ -499,7 +499,7 @@ describe('AdminShell: the dForms rail look', () => {
       );
       const items = rails(host).desktop.querySelectorAll('nav > ul > li');
       const door = items[items.length - 1]!.querySelector<HTMLAnchorElement>('[data-testid="nav-agents"]')!;
-      expect(door.textContent).toContain('Dapta Agents');
+      expect(door.textContent).toContain('Axon Growth');
       expect(door.getAttribute('target')).toBe('_blank');
       const href = new URL(door.getAttribute('href')!);
       expect(href.origin).toBe('https://platform.example.test');

@@ -15,7 +15,13 @@ Inventario hecho el 26 oct 26 sobre `upstream/main` (`c7663e2`).
 | Logo | Como el de AxonSynapse: el nombre en Alan Sans 800 con un punto del color de acento detrás, y un icono propio para el favicon | Hecho, 26 oct 26: `components/brand/axon-logo.tsx` y favicon (icono sobre baldosa `#1a1a1c`) |
 | Letra | **Alan Sans**, la misma que AxonSynapse y el resto de Axon | Decidido, 26 oct 26 |
 | Colores | **Naranja AxonCalendar** (rectifica el azul, 26 oct 26). Claro: relleno `#F75C03` con texto `#1a1a1c` encima (blanco no llega: 3,2:1); texto o línea en naranja sobre fondo claro, `#c64a02`. Oscuro: el mismo `#F75C03` de relleno con texto `#1a1a1c`; texto en naranja sobre fondo oscuro, `#fc7a30`. Sustituye al verde de Dapta | Decidido, 26 oct 26 |
-| Sello «Hecho con…» | A dónde lleva y si se muestra | Pendiente |
+| Sello «Hecho con…» | Se muestra y lleva a la web de Axon Growth (`NEXT_PUBLIC_SIGNUP_URL`), en las páginas de reserva y en los emails | Decidido, 26 oct 26; se activa en el despliegue |
+| Color por defecto de las páginas de reserva | Naranja `#f75c03` (`DEFAULT_ACCENT`) para quien no tiene color guardado | Hecho, 26 oct 26 |
+| Color de las cuentas nuevas | Naranja `#de5303` (`NEW_HOST_ACCENT`) sobre fondo claro: `#f75c03` se queda en 2,9:1 y Dapta pide 3:1 | Hecho, 26 oct 26 |
+| Texto y etiquetas del sello | «Conoce Axon Growth» y «AxonCalendar es una herramienta de Axon Growth». UTM `utm_source=axon-calendar`, `utm_campaign=made-with-axon` | Hecho, 26 oct 26 |
+| Enlace a la plataforma | «Axon Growth», lleva a `https://www.axon-growth.com/` (`NEXT_PUBLIC_PLATFORM_URL`). Sustituye a «Dapta Agents» en la barra y en el selector, con el símbolo de Axon Growth (`apps/web/public/axon-growth-mark.png`) | Hecho, 26 oct 26; falta fijar la URL en el despliegue |
+| Selector de productos y botón de inicio de sesión | Neutros: «Productos» e «Iniciar sesión» | Hecho, 26 oct 26 |
+| Frases de la suscripción de Dapta AI | Sin suscripción: «Incluido en tu plan»; el ajuste del sello se llama «Marca de AxonCalendar» | Hecho, 26 oct 26 |
 
 ## Lo que Dapta ya dejó preparado para un fork
 
@@ -32,9 +38,9 @@ código, solo configuración.
 | Variable | Qué cambia | Valor para AxonCalendar |
 |---|---|---|
 | `NEXT_PUBLIC_PRODUCT_NAME` | Nombre en la barra lateral, el selector de apps, el título y la descripción de la web (`app/layout.tsx`) y el nombre del conector para agentes de IA | `AxonCalendar` |
-| `NEXT_PUBLIC_SIGNUP_URL` | A dónde lleva el sello «Made with…» de las páginas de reserva | La web de AxonCalendar (pendiente) |
-| `NEXT_PUBLIC_HIDE_BADGE` | Oculta el sello | Según decidamos |
-| `NEXT_PUBLIC_PLATFORM_URL` | Enlace «plataforma» del selector de apps | Web de Axon Growth, o vacío para ocultarlo |
+| `NEXT_PUBLIC_SIGNUP_URL` | A dónde lleva el sello «Hecho con…» de las páginas de reserva y de los emails | `https://www.axon-growth.com/` |
+| `NEXT_PUBLIC_HIDE_BADGE` | Oculta el sello | Sin fijar: el sello se muestra |
+| `NEXT_PUBLIC_PLATFORM_URL` | Enlace «Axon Growth» de la barra lateral y del selector de apps | `https://www.axon-growth.com/` |
 | `NEXT_PUBLIC_FORMS_URL` | Enlace a Forms del selector de apps | La URL de AxonForm |
 | `PREMIUM_FEATURES` | `open` deja todo abierto y oculta lo que depende de la suscripción de Dapta AI | `open` mientras no haya cobro propio |
 | `MAIL_FROM_NAME` y `MAIL_FROM_EMAIL` | Nombre y dirección de los emails | `AxonCalendar` y el dominio que se elija |
@@ -127,18 +133,17 @@ No son marca visible o romperían la compatibilidad con Dapta:
 ## Estado (26 oct 26)
 
 Hecho: nombre (por `.env` en local), letra, color de acento, logo con punto,
-favicon e icono de iOS. Ficheros tocados, en el registro de `UPSTREAM.md`.
+favicon e icono de iOS. Textos con la marca de Dapta, mediante la capa
+`packages/shared/src/i18n/axon-brand.ts` (lo que quede con «Dapta» sale como
+«Axon Growth»). Pie y color de acento de los emails. Color por defecto de las páginas de
+reserva. Verdes de Dapta escritos
+a mano: el brillo de la barra lateral y las animaciones de la página para
+desarrolladores. Ficheros tocados, en el registro de `UPSTREAM.md`.
 
 Pendiente:
 
-- Textos con la marca de Dapta (punto 5) y emails (punto 6).
-- Verdes de Dapta escritos a mano fuera de `tokens.css`: el brillo de «Conecta
-  tu agente» en la barra lateral (`apps/web/app/globals.css`, `rgb(61 220 132)`)
-  y las animaciones de la página para desarrolladores
-  (`apps/web/app/admin/developers/walk-kit.tsx`, `walkthrough.tsx`,
-  `app-frames.tsx`).
-- Color por defecto de las páginas públicas de quien no eligió uno.
-- El nombre en producción va por variables de entorno del despliegue.
+- Variables del despliegue del punto 1 (`NEXT_PUBLIC_PRODUCT_NAME`,
+  `NEXT_PUBLIC_PLATFORM_URL`, `NEXT_PUBLIC_SIGNUP_URL`…). Son de compilación.
 
 ## Orden de trabajo propuesto
 

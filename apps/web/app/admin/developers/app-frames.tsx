@@ -67,7 +67,7 @@ function SignIn({ m, app, url, d = 0 }: { m: WalkMessages; app: string; url: str
           <div className="flex h-7 items-center rounded-md border border-white/15 px-2 text-[10px]">
             <Typed text={s.email} d={d + 0.3} dur={0.8} />
           </div>
-          <span className="wt-press mt-2 flex h-7 items-center justify-center rounded-md bg-[#3DDC84] text-[10px] font-semibold text-black" style={at(d + 1.3)}>
+          <span className="wt-press mt-2 flex h-7 items-center justify-center rounded-md bg-[#F75C03] text-[10px] font-semibold text-black" style={at(d + 1.3)}>
             {s.continue}
           </span>
           <div className="wt-fade mt-3 text-center" style={at(d + 1.8)}>
@@ -805,7 +805,7 @@ function CursorFrame({ step, m, prompt, url, cursorJson }: AppFrameProps) {
               <p className="mt-1 font-mono text-[9px]">◍ localhost:8787</p>
               <p className="mt-2 rounded bg-[#fef3c7] px-2 py-1.5 text-[8px] text-[#78350f]">{t(s.warning, { app: 'Cursor' })}</p>
               <span className="mt-2 flex h-6 items-center justify-center rounded-md border border-white/20 text-[9.5px]">{s.cancel}</span>
-              <span className="wt-press mt-1.5 flex h-6 items-center justify-center rounded-md bg-[#3DDC84] text-[9.5px] font-semibold text-black" style={at(2.6)}>
+              <span className="wt-press mt-1.5 flex h-6 items-center justify-center rounded-md bg-[#F75C03] text-[9.5px] font-semibold text-black" style={at(2.6)}>
                 {s.allow}
               </span>
             </div>

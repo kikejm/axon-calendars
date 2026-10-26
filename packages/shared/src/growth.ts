@@ -13,8 +13,8 @@
 /** UTM values are fixed product-wide; only the medium varies by surface. */
 export type SignupMedium = 'badge' | 'confirmation' | 'profile' | 'email';
 
-export const UTM_SOURCE = 'dapta-calendars';
-export const UTM_CAMPAIGN = 'made-with-dapta';
+export const UTM_SOURCE = 'axon-calendar';
+export const UTM_CAMPAIGN = 'made-with-axon';
 
 /**
  * The signup destination carrying the growth-loop UTM tags, or null when no

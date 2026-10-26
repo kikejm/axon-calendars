@@ -89,7 +89,7 @@ export function StepChip({ n, title, low }: { n: number; title: string; low?: bo
     <span
       className={`absolute left-3 ${low ? 'bottom-3' : 'top-3'} z-40 inline-flex items-center gap-1.5 rounded-full bg-black/70 py-1 pl-1 pr-2.5 text-[9.5px] font-medium text-white shadow-lg ring-1 ring-white/10 backdrop-blur`}
     >
-      <span className="flex h-3.5 w-3.5 items-center justify-center rounded-full bg-[#3DDC84] text-[8px] font-bold text-black">
+      <span className="flex h-3.5 w-3.5 items-center justify-center rounded-full bg-[#F75C03] text-[8px] font-bold text-black">
         {n}
       </span>
       {title}
@@ -137,7 +137,7 @@ export function MeetingAnswer({
               key={slot}
               className={cn(
                 'rounded-md border px-2 py-0.5 font-mono text-[9.5px]',
-                i === BOOKED_SLOT ? 'border-[#3DDC84] text-[#3DDC84]' : 'border-white/15 opacity-70',
+                i === BOOKED_SLOT ? 'border-[#F75C03] text-[#fc7a30]' : 'border-white/15 opacity-70',
               )}
             >
               {slot}
@@ -147,17 +147,17 @@ export function MeetingAnswer({
       </div>
       {call('book_meeting', d + 0.8)}
       <div
-        className="wt-pop flex items-center gap-2.5 rounded-lg border border-[#3DDC84]/40 bg-[#3DDC84]/10 px-2.5 py-2"
+        className="wt-pop flex items-center gap-2.5 rounded-lg border border-[#F75C03]/40 bg-[#F75C03]/10 px-2.5 py-2"
         style={at(d + 1.1)}
       >
-        <span className="w-1 self-stretch rounded-full bg-[#3DDC84]" />
+        <span className="w-1 self-stretch rounded-full bg-[#F75C03]" />
         <span className="min-w-0 flex-1">
           <span className="block truncate font-semibold">{a.meeting}</span>
           <span className="block truncate text-[9px] opacity-75">
             {a.when} · {a.calendar}
           </span>
         </span>
-        <span className="flex shrink-0 items-center gap-1 rounded-full bg-[#3DDC84] px-1.5 py-0.5 text-[8.5px] font-semibold text-black">
+        <span className="flex shrink-0 items-center gap-1 rounded-full bg-[#F75C03] px-1.5 py-0.5 text-[8.5px] font-semibold text-black">
           ✓ {a.booked}
         </span>
       </div>

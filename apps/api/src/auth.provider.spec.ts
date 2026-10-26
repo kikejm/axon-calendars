@@ -92,7 +92,7 @@ describe('LocalAuthProvider — email-aware dev login', () => {
     const row = await db.get<{ brand_color: string | null; booking_page_style: unknown }>(
       sql`SELECT brand_color, booking_page_style FROM member WHERE id = ${p.memberId}`,
     );
-    expect(row!.brand_color).toBe('#1a1a1c');
+    expect(row!.brand_color).toBe('#de5303');
     const style =
       typeof row!.booking_page_style === 'string'
         ? JSON.parse(row!.booking_page_style)
