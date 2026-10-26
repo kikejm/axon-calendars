@@ -74,15 +74,15 @@ describe('renderBrandedHtml', () => {
   it('names the product only with a signup destination, and only to the invitee', () => {
     const none = renderBrandedHtml('confirmation', vars(), 'en');
     expect(none).not.toContain('AxonCalendar');
-    expect(none).not.toContain('Create your free calendar');
+    expect(none).not.toContain('Discover Axon Growth');
 
     const url = 'https://signup.example.test/?utm_medium=email';
     const withUrl = renderBrandedHtml('confirmation', vars(), 'en', 'attendee', { signupUrl: url });
     expect(withUrl.match(/AxonCalendar/g)).toHaveLength(1);
-    expect(withUrl).toContain('Create your free calendar');
+    expect(withUrl).toContain('Discover Axon Growth');
     expect(withUrl).toContain(`href="${url}"`);
     expect(renderBrandedHtml('confirmation', vars(), 'es', 'attendee', { signupUrl: url })).toContain(
-      'Crea tu calendario gratis',
+      'Conoce Axon Growth',
     );
 
     const host = renderBrandedHtml('confirmation', vars(), 'en', 'host', { signupUrl: url });

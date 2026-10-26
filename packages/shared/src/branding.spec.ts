@@ -467,7 +467,7 @@ describe('withNewHostBranding: what a host is born with', () => {
   it('writes ink on paper into an empty config', () => {
     expect(withNewHostBranding()).toEqual({ brandColor: NEW_HOST_ACCENT, style: { theme: NEW_HOST_THEME } });
     expect(withNewHostBranding({ brandColor: null, style: null })).toEqual({
-      brandColor: '#1a1a1c',
+      brandColor: '#de5303',
       style: { theme: 'light' },
     });
   });

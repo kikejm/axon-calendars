@@ -530,7 +530,7 @@ export function defaultBranding(displayName: string, avatarUrl: string | null = 
  * the light canvas a new host is also born with, it is the primary button, the
  * selected day and the selected time, and nothing on the page is louder than it.
  */
-export const NEW_HOST_ACCENT = '#1a1a1c';
+export const NEW_HOST_ACCENT = '#de5303';
 
 /** The canvas a host is born with: paper, where the whole category renders. */
 export const NEW_HOST_THEME: BrandCanvas = 'light';

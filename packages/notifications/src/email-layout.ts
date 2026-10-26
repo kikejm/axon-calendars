@@ -345,7 +345,7 @@ export function renderBrandedHtml(
   const signup = audience === 'attendee' ? growth.signupUrl : null;
   const madeWith = signup
     ? `<div style="margin:0 0 6px;">${esc(es ? 'Hecho con AxonCalendar' : 'Made with AxonCalendar')} · ` +
-      `<a href="${safeHref(signup)}" style="color:${C.ink};text-decoration:underline;">${esc(es ? 'Crea tu calendario gratis' : 'Create your free calendar')}</a></div>`
+      `<a href="${safeHref(signup)}" style="color:${C.ink};text-decoration:underline;">${esc(es ? 'Conoce Axon Growth' : 'Discover Axon Growth')}</a></div>`
     : '';
   return frame(
     `${status(c.status, c.color)}

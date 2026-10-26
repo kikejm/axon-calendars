@@ -13,9 +13,9 @@ describe('buildSignupUrl', () => {
   it('tags a configured destination with the full UTM scheme', () => {
     const url = new URL(buildSignupUrl({ baseUrl: 'https://signup.example.com', medium: 'badge', accountCode: 'acme' })!);
     expect(url.origin).toBe('https://signup.example.com');
-    expect(url.searchParams.get('utm_source')).toBe('dapta-calendars');
+    expect(url.searchParams.get('utm_source')).toBe('axon-calendar');
     expect(url.searchParams.get('utm_medium')).toBe('badge');
-    expect(url.searchParams.get('utm_campaign')).toBe('made-with-dapta');
+    expect(url.searchParams.get('utm_campaign')).toBe('made-with-axon');
     expect(url.searchParams.get('utm_content')).toBe('acme');
   });
 
